@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route.min.js"></script>
+
+    <link href="lib\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="css\app.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="hwaztechApp" ng-controller="appController">
+    <header class="menu">
+        <div class="wrap">
+            <div>
+                <a href="/" class="menu_logo">
+                        <img src="img/logo24.png"></img>
+                    </a>
+            </div>
+
+            <button class="menu__toggle menu__toggle--white"><span class="menu__toggle__line">menu</span></button>
+            <nav class="menu__menubar">
+                <ul role="menubar" class="menu__list">
+                    <li role="menuitem" class="menu__item">
+                        <a href="/" title="Home" class="menu__link menu__link--current">Home</a>
+                    </li>
+                    <li role="menuitem" class="menu__item">
+                        <a href="/#/developers/" title="Our Developers" class="menu__link">Our Developers</a>
+                    </li>
+                    <li role="menuitem" class="menu__item">
+                        <a href="/join/" title="Join X-Team as a Developer" class="menu__link">Case Studies</a>
+                    </li>
+                    <li role="menuitem" class="menu__item">
+                        <a href="/unleash/" title="Unleash" class="menu__link">Our Methodology</a>
+                    </li>
+                    <li role="menuitem" class="menu__item">
+                        <a href="/blog/" title="X-Team's blog" class="menu__link">Blog</a>
+                    </li>
+                    <li role="menuitem" class="menu__item">
+                        <a href="/portfolio/" title="Our Work" class="menu__link">Join Hwaztech</a>
+                    </li>
+                </ul>
+
+                <a href="/hire-developers-application/" title="Hire X-Team" class="btn btn-primary">Hire Developers</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <div ng-view></div>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__links">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <a href="/" class="footer__logo__link">
+                            <img src="img/logo25.png" height="50px"></img>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fa fa-map-marker" style="margin-left:3px;margin-right:18px"></i>Xi'an, Shaanxi, China
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <a class="footer__link" href="mailto:consultant@hwaztech.com">consultant@hwaztech.com</a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Company</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--mobile"><a class="footer__link" href="/">Home</a></li>
+                        <li class="footer__item footer__item--mobile"><a class="footer__link" href="/blog/">Blog</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/about/">About Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/portfolio/">Our Work</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/unleash/">Unleash</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/x-outpost/">X-Outpost</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/developers/">Our Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/authors/">Write for us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/hire-developers/">Hire Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/join/">Join as a Developer</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Resources</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="/case-studies/">Case Studies</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/react-resources/">React Resources</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/nodejs-resources/">Node.js Resources</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/remote-team-guide/">Remote Teams Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Hire Developers</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="/hire-react-developers/">React Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/hire-angular-developers/">Angular Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/hire-javascript-developers/">Javascript Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/hire-node-developers/">Node Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/hire-php-developers/">PHP Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/hire-laravel-developers/">Laravel Developers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/hire-symfony-developers/">Symfony Developers</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Connect</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="/blog/">Blog</a></li>
+                        <li class="footer__item"><a class="footer__link" href="http://twitter.com/xteam">Twitter</a></li>
+                        <li class="footer__item"><a class="footer__link" href="http://facebook.com/x.team">Facebook</a></li>
+                        <li class="footer__item"><a class="footer__link" href="http://www.linkedin.com/company/x-team">Linkedin</a></li>
+                        <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/channel/UCAo_R1CP6IsA88l41ZpPpoQ">YouTube</a></li>
+                        <li class="footer__item"><a class="footer__link" href="mailto:contact@x-team.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- footer links -->
+            <div class="footer__colophon">
+                <h4 class="footer__brands__title">Trusted by the world's <br class="br--mobile">leading brands since 2006</h4>
+                <div class="footer__brands">
+
+                    <div class="brands--gray">
+                        <ul class="brands__logos">
+                            <li class="brands__logo brands__logo--fox">
+                                <img class="brands__logo__image" alt="National Geographic" src="https://x-team.com/images/brands/fox--gray.png">
+                            </li>
+                            <li class="brands__logo brands__logo--natgeo">
+                                <img class="brands__logo__image" alt="National Geographic" src="https://x-team.com/images/brands/national-geographic--gray.png">
+                            </li>
+                            <li class="brands__logo brands__logo--threadless">
+                                <img class="brands__logo__image" alt="Threadless" src="https://x-team.com/images/brands/threadless--gray.png">
+                            </li>
+                            <li class="brands__logo brands__logo--twitter">
+                                <img class="brands__logo__image" alt="Twitter" src="https://x-team.com/images/brands/twitter--gray.png">
+                            </li>
+                            <li class="brands__logo brands__logo--discovery">
+                                <img class="brands__logo__image" alt="Discovery" src="https://x-team.com/images/brands/discovery--gray.png">
+                            </li>
+                            <li class="brands__logo brands__logo--american-idol">
+                                <img class="brands__logo__image" alt="American Idol" src="https://x-team.com/images/brands/american-idol.png">
+                            </li>
+                            <li class="brands__logo brands__logo--kaplan">
+                                <img class="brands__logo__image" alt="Kaplan" src="https://x-team.com/images/brands/kaplan--gray.png">
+                            </li>
+                            <li class="brands__logo brands__logo--pantheon">
+                                <img class="brands__logo__image" alt="Pantheon" src="https://x-team.com/images/brands/pantheon--gray.png">
+                            </li>
+                            <li class="brands__logo brands__logo--riot">
+                                <img class="brands__logo__image" alt="Riot" src="https://x-team.com/images/brands/riot--gray.png">
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <address class="footer__colophon__address">
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> © All rights reserved. Hwaztech Ltd.
+                </address>
+            </div>
+        </div>
+        <!-- wrap -->
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/appController.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+
+</html>
