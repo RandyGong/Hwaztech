@@ -3132,7 +3132,8 @@
  
      .section__pic,.section__pic__img
      {
-         max-height: 650px
+         max-height: 650px;
+         max-width: 750px;
      }
  
      .section__pic--left
@@ -4197,7 +4198,7 @@
      margin-bottom: 1rem;
      overflow: hidden;
      display: none;
-     box-shadow: 0 6px 18px 0 rgba(0,0,0,.06)
+     /* box-shadow: 0 6px 18px 0 rgba(0,0,0,.06) */
  }
  
  .unleash-feed__item:nth-child(1),.unleash-feed__item:nth-child(2),.unleash-feed__item:nth-child(3),.unleash-feed__item:nth-child(4)
@@ -7315,7 +7316,8 @@
  {
      list-style: none;
      margin: 0;
-     padding: 0
+     padding: 0;
+     box-shadow: 0 6px 18px 0 rgba(0,0,0,.06)
  }
  
  .devsfeed__item__pic
