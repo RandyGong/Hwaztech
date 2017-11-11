@@ -2865,6 +2865,10 @@
      {
          max-width: 25rem
      }
+
+     .section_intro{
+         margin-left: 20px;
+     }
  
      .section__pic:before,.section__pic:after
      {
