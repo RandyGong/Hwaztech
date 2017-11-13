@@ -782,7 +782,7 @@
  
      .menu__list
      {
-         text-align: center
+         padding-left:250px;
      }
  
      .menu__item
@@ -806,11 +806,24 @@
          font-weight: 400;
          line-height: 1;
          text-transform: uppercase;
-         color: #34323b;
-         opacity: .6
+         /* color: #34323b; */
+         opacity: .6;
      }
+
+     .menu__link:hover{
+         text-decoration: none;         
+         /* font-size: .95rem; */
+         color: #337ab7;
+         transition: all .2s ease-out;
+     }
+
+     .menu__link:active{
+        text-decoration: none;        
+        color: #337ab7;
+        font-weight: bold;
+    }
  
-     .menu__link:before,.menu__link:after
+     /* .menu__link:before,.menu__link:after
      {
          content: '';
          display: block;
@@ -859,7 +872,7 @@
      {
          width: 50%;
          transition: none
-     }
+     } */
 
      .menu_logo img{
         height:50px;
@@ -1107,7 +1120,7 @@
      margin: auto
  }
  
- .benefits__item--team:before
+ /* .benefits__item--team:before
  {
      content: url(../images/icons/dedicated-team.svg);
      margin-left: -20px
@@ -1129,7 +1142,7 @@
  {
      content: url(../images/icons/flexible-contract.svg);
      margin-left: -18px
- }
+ } */
  
  @media screen and (min-width:1024px)
  {
@@ -3974,6 +3987,10 @@
      color: #34323b;
      margin: 0;
      line-height: 2rem
+ }
+
+ .subscription_btn {
+     margin-top: 30px;
  }
  
  .subscription__subtitle
@@ -7704,7 +7721,7 @@
  }
 
  .menu_logo img{
-     opacity: 0.5;
+     opacity: 0.3;
  }
  
  @media screen and (max-width:1023px)
