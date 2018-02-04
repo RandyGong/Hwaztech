@@ -563,6 +563,17 @@
      color: white; 
      font-size:2em
  }
+
+ .left-circle{
+    background: #f3a213; 
+    line-height: 250px;
+    margin-right:400px
+ }
+
+ .right-circle{
+    background: #27ae75;  
+    padding-top: 80px;
+ }
  
  @media screen and (max-width:1023px)
  {
@@ -1763,7 +1774,7 @@
  
  .cavalry__action:hover
  {
-     box-shadow: 0 0 20px rgba(0,0,0,.15)
+     /* box-shadow: 0 0 20px rgba(0,0,0,.15) */
  }
  
  .cavalry__action__img
@@ -1802,6 +1813,18 @@
          margin-left: auto;
          margin-right: auto;
          width: 61%
+     }
+
+     .model-wrap{
+         width: 80%;
+     }
+
+     .flow{
+         flex-direction: row;
+     }
+     
+     .left-circle{
+         margin-right: 20%;
      }
  }
  
