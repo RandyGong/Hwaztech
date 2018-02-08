@@ -554,6 +554,17 @@
      color: white;
  }
 
+ .model-yes{
+    margin-right: 350px;
+    font-size: 4em;
+    font-weight: bold;
+ }
+
+ .model-no{
+    font-size: 4em;
+    font-weight: bold;
+ }
+
  .model-target{
      border-radius: 200px;
      height: 250px;
@@ -1822,10 +1833,6 @@
      .flow{
          flex-direction: row;
      }
-     
-     .left-circle{
-         margin-right: 20%;
-     }
  }
  
  @media screen and (min-width:1024px)
@@ -2799,7 +2806,7 @@
  
      .section__body--hero
      {
-         padding: 10.5rem 1rem 14rem
+         padding: 2rem 1rem 1rem
      }
  
      .section__title--hero
@@ -2912,7 +2919,7 @@
  
      .section__body--left
      {
-         margin-left: auto
+         margin-left: 7%
      }
  
      .section__pic--skills:before,.section__pic--skills:after
@@ -3005,7 +3012,8 @@
  
      .section__pic--left
      {
-         margin-left: -10%
+         /* margin-left: -10% */
+         max-width: 500px;
      }
  
      .landing-tech .section--right
@@ -3016,7 +3024,8 @@
      .section__pic--right
      {
          position: absolute;
-         right: 0;
+         right: 3%;
+         max-width: 500px;
          margin: 0 auto auto 0
      }
  
@@ -3440,7 +3449,7 @@
  .section--portfolio__quote:before
  {
      content: '';
-     background: url(../images/icons/quotes.svg) no-repeat;
+     /* background: url(../images/icons/quotes.svg) no-repeat; */
      background-size: 100%;
      display: block;
      width: 2.75rem;
@@ -4866,7 +4875,7 @@
  
  .text__quote:before
  {
-     content: url(../images/icons/quote-red.svg);
+     /* content: url(../images/icons/quote-red.svg); */
      display: block;
      color: #ff5964;
      margin: auto;
@@ -7820,7 +7829,7 @@
      .footer__colophon:after
      {
          display: block;
-         content: url('../images/x-team-logo-gray.svg');
+         /* content: url('../images/x-team-logo-gray.svg'); */
          position: absolute;
          width: 94px;
          height: 32px;
@@ -10218,4 +10227,79 @@
          text-align: left
      }
  };
+
+
+
+ .narrow .fuck {
+    display: block;
+    width: 300px;     
+ }
+
+ .narrow .model-wrap {
+    display: block;
+    width: 300px;     
+ }
+
+ .narrow .model-wrap p{
+     font-size: 1rem;
+ }
+
+ .narrow .flow{    
+    display: block;
+ }
+
+ .narrow .model-yes{
+    font-size: 2.5em;
+    float: left;
+    margin-left: 50px;
+ }
+
+ .narrow .model-no{    
+    font-size: 2.5em;
+    float: right;
+    margin-right: 65px;
+ }
+
+ .narrow .model-target{
+    width:130px;
+    height:130px;    
+    line-height: 25px;
+    font-size: 1.4em;
+ }
+
+ .narrow .left-circle {
+    float: left;
+    margin-right: 0;
+    padding-top: 50px;
+}
+
+.narrow .right-circle {
+    float: right;
+    padding-top: 39px;
+}
+
+.narrow .flow-options{
+    margin-top:50px;
+    height: 100px;
+}
+
+.narrow .model-yes{
+    margin-right: 0;
+}
+
+
+ .narrow .interesting {
+     display: block;
+ }
+
+
+ .pad .left-circle {
+    margin-right: 150px;
+}
+
+.pad .model-yes {
+    margin-right: 250px;
+}
+
+
  

@@ -12,10 +12,11 @@
     <link href="lib\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet">
     <link href="css\app.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 
-<body ng-app="hwaztechApp" ng-controller="appController">
+<body ng-app="hwaztechApp" ng-controller="appController" ng-class="{'narrow':isNarrow,'pad':isPad,'full':isFull}">
     <header class="menu">
         <div class="wrap">
             <div>
