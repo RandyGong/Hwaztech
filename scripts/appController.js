@@ -2,12 +2,22 @@
 
     'use strict';
 
-    var appController = function ($scope, $location) {
+    var appController = function ($scope, $location, $timeout) {
         $scope.field = 'approach';
         var bodyWidth = window.document.body.clientWidth;
         $scope.isNarrow = bodyWidth < 460;
-        $scope.isPad = bodyWidth >= 460 && bodyWidth < 1024;
-        $scope.isFull = bodyWidth >= 1024;
+        $scope.isPad = bodyWidth >= 460 && bodyWidth < 980;
+        $scope.isPadLarge = bodyWidth >= 980 && bodyWidth <= 1280;
+        $scope.isFull = bodyWidth > 1280;
+
+        $scope.redirect = function () {
+            $('body').removeClass('body--menu-visible').css({overflowY: 'auto'});
+            //$('div[ng-view]').scrollTop();
+            // location.reload();
+            // $timeout(function () {
+            //     $('body').scrollTop();
+            // }, 1000);
+        };
 
         $scope.$watch(function () {
             return $location.search();
@@ -23,5 +33,5 @@
         });
     }
 
-    app.controller('appController', ['$scope', '$location', appController]);
+    app.controller('appController', ['$scope', '$location', '$timeout', appController]);
 })();

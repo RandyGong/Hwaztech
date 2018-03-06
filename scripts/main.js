@@ -8,6 +8,11 @@
     burgerIcon.addEventListener("click", function(event){
       event.preventDefault();
       body.classList.toggle('body--menu-visible');
+      if (body.classList.contains('body--menu-visible')) {
+        body.style.overflowY = 'hidden';        
+      } else {
+        body.style.overflowY = 'auto';  
+      }
     });
   
     if (window.innerWidth < 1116) {
