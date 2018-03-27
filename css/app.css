@@ -7422,7 +7422,7 @@
  {
      font: bold 1.25rem/1 'Source Sans Pro',sans-serif;
      text-transform: uppercase;
-     margin: 2rem 0 .4em
+     margin: 1rem
  }
  
  .devsfeed__item__text
@@ -10384,7 +10384,19 @@
     text-align: center;
 }
 
+.cooperation{
+    padding: 40px 0;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.start{
+    font-weight: bold;
+    width: 100%;
+    margin-top: 8px;
+    font-size: 16px;
+}
 
 
 
@@ -10413,11 +10425,11 @@ section, .footer, .footer_m .footer__logo, .footer_address, .menu, .cavalry__act
     color: #337ab7 !important;
 }
 
-.section__item__title, .benefits__item__title, .cavalry__title, .section__title, .benefits__title, .unleash-feed__update, .cavalry__action__title, .section__title--hero{
+.section__item__title, .benefits__item__title, .cavalry__title, .section__title, .benefits__title, .unleash-feed__update, .cavalry__action__title, .section__title--hero, .resources-newsletters__title{
     color: #f2f2f2 !important;
 }
 
-.section__item__text, .cavalry__intro, .benefits__item__text, .section__copy, .subscription__title, .benefits__intro, .unleash-feed__label, .section__copy--hero, .model-yes, .model-no {
+.section__item__text, .cavalry__intro, .benefits__item__text, .section__copy, .subscription__title, .benefits__intro, .unleash-feed__label, .section__copy--hero, .model-yes, .model-no, .devsfeed__item__title {
     color: #CCC !important;
 }
 

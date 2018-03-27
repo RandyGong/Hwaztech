@@ -44,11 +44,11 @@
                         <a href="/#/engagement-model/" title="Engagement Model" class="menu__link" ng-click="redirect()">Engagement Model</a>
                     </li>
                     <li role="menuitem" class="menu__item">
-                        <a href="/portfolio/" title="Join Hwaztech" class="menu__link" ng-click="redirect()">Join Us</a>
+                        <a href="/#/join-us" title="Join Hwaztech" class="menu__link" ng-click="redirect()">Join Us</a>
                     </li>
                 </ul>
 
-                <a href="/hire-developers-application/" title="Hire X-Team" class="btn btn-primary hide-on-pad">Hire Developers</a>
+                <a href="/#/start-cooperation/" title="Hire X-Team" class="btn btn-primary hide-on-pad">Hire Developers</a>
 
             </nav>
         </div>
@@ -56,14 +56,14 @@
 
     <div ng-view></div>
 
-    <section class="subscription">
+    <section class="subscription" ng-if="!hideCooperation">
         <div class="wrap">
             <h2 class="subscription__title">
                 Agree with our <span>{{field}}</span>? <br/><br/>Then why not start our cooperation!
             </h2>
 
             <div class="subscription_btn">
-                <a href="/hire-developers-application/" title="Hire Developers" class="btn btn-primary" style="padding:1em 3em;font-size:1rem">Hire Developers</a>
+                <a href="/#/start-cooperation/" title="Start Cooperation" class="btn btn-primary" style="padding:1em 3em;font-size:1rem">Hire Developers</a>
             </div>
         </div>
     </section>
@@ -88,9 +88,9 @@
                     <li class="footer__item footer__item--mobile"><a class="footer__link" href="/blog/">Our Developer</a></li>
                     <li class="footer__item footer__item--mobile"><a class="footer__link" href="/blog/">OUR METHODOLOGY</a></li>
                     <li class="footer__item footer__item--mobile"><a class="footer__link" href="/blog/">ENGAGEMENT MODEL</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/about/">About Us</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/portfolio/">Our Work</a></li>
-                    <li class="footer__item"><a class="footer__link" href="/unleash/">Join Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/#/case-studies/">Our Work</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/#/join-us">Join Us</a></li>
     
                 </ul>
             </div>
