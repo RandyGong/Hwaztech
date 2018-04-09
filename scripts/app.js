@@ -11,5 +11,6 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/engagement-model', { templateUrl: 'view/engagement-model.html' })
         .when('/start-cooperation', { templateUrl: 'view/start-cooperation.html' })
         .when('/join-us', { templateUrl: 'view/join-us.html' })
+        .when('/submit-success', { templateUrl: 'view/submit-success.html' })
         .otherwise({ redirectTo: '/' });
 }]);
