@@ -1,4 +1,4 @@
-<div class="wrap cooperation">
+<div class="wrap cooperation" ng-controller="appController">
     <h1 class="form__title">
       Join This Talented Developers Team
     </h1>
@@ -7,12 +7,13 @@
     </p>
     <div>
       <form class="form__form validate" name="hire" method="post" id="subscribe">
-        <input class="form__input" type="text" placeholder="Full Name" name="name" id="name" required="">
-        <input class="form__input" type="text" placeholder="Skillset" name="skillset">
-        <input class="form__input" type="email" placeholder="E-mail" name="email" id="email" required="">
-        <textarea class="form__input form__input--textarea" name="description" placeholder="How did you hear about us?"></textarea>
+        <input class="form__input" type="text" placeholder="Full Name" name="name" id="name" required="" ng-model="name">
+        <input class="form__input" type="text" placeholder="Skillset" name="skillset" ng-model="skillset" required="">
+        <input class="form__input" type="number" placeholder="Years you've been coding" name="years" ng-model="years" required="">
+        <input class="form__input" type="email" placeholder="E-mail" name="email" id="email" required="" ng-model="email">
+        <textarea class="form__input form__input--textarea" name="heardFrom" placeholder="How did you hear about us?" ng-model="heardFrom"></textarea>
      
-        <button class="btn btn--big start btn-primary" type="submit" ng-click="start()">Join</button>
+        <button class="btn btn--big start btn-primary" type="submit" ng-click="joinUs()">Join</button>
       </form>
     </div>
   </div>

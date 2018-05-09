@@ -25,14 +25,9 @@
         };
 
         $scope.redirect = function () {
-
-            $('body').removeClass('body--menu-visible').css({ overflowY: 'auto' });
-            //$('div[ng-view]').scrollTop();
-            // location.reload();
-            // $timeout(function () {
-            //     $('body').scrollTop();
-            // }, 1000);
-
+            var body = document.getElementsByTagName('body')[0];
+            removeClass(body, 'body--menu-visible');
+            body.style.overflowY = 'auto';
         };
 
         var w = angular.element($window);
@@ -58,15 +53,29 @@
                     'details': $scope.details
                 }
             };
-            $scope.isOperating = true;
+            $scope.isOperating = true;            
 
-            $http.post(name, data).then(function () {
-                $scope.isOperating = false;
+            $http.post(name, data).then(function () {                
                 $location.path("submit-success");
-            }, function () {
-                alert('Oops, an error occured while processing your request, please try again.');
                 $scope.isOperating = false;
+            }, function () {
+                alert('Oops, an error occured while processing your request, please send us an email to describe your requirements, thanks!');
+                $scope.isOperating = false;
+                var mailto = document.getElementById('mailto');
+                var mailBody = "My Name: " + $scope.name + "%0a%0dMy Company: " + $scope.company + "%0a%0dMy Email Address: " + $scope.email + "%0a%0dMy Requirements: " + $scope.details;
+                mailto.href = "mailto:consultant@hwaztech.com?subject=New Business Request&body=" + mailBody;
+                mailto.click();
             });
+        }
+
+        $scope.joinUs = function() {
+            if (!$scope.name || !$scope.skillset || !$scope.years || !$scope.email) {
+                return;
+            }
+            var mailto = document.getElementById('mailto');
+            var mailBody = "My Name: " + $scope.name + "%0a%0dMy Skillset: " + $scope.skillset + "%0a%0dMy Experiences: " + $scope.years + " years%0a%0dMy Email Address: " + $scope.email + "%0a%0dI heard Hwaztech from: " + $scope.heardFrom;
+            mailto.href = "mailto:consultant@hwaztech.com?subject=I Want To Join Hwaztech!&body=" + mailBody;
+            mailto.click();
         }
 
         $scope.$watch(function () {
@@ -100,6 +109,23 @@
             $scope.isPadLarge = bodyWidth >= 980 && bodyWidth <= 1280;
             $scope.isFull = bodyWidth > 1280 && bodyWidth <= 1600;
             $scope.isFullLarge = bodyWidth > 1600;
+        }
+
+        function hasClass(obj, cls) {
+            return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+        }
+
+        function addClass(obj, cls) {
+            if (!this.hasClass(obj, cls)) {
+                obj.className += " " + cls;
+            }
+        }
+
+        function removeClass(obj, cls) {
+            if (hasClass(obj, cls)) {
+                var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+                obj.className = obj.className.replace(reg, ' ');
+            }
         }
     }
 
